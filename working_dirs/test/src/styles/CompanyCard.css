@@ -1,0 +1,42 @@
+.company-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 4px solid teal;
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.company-card h3 {
+  color: teal;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric span:first-child {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.metric span:last-child {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
